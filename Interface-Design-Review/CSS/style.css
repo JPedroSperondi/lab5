@@ -1,0 +1,143 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    color: white;
+}
+
+body>header{
+    height: 20vh;
+    background-color: darkblue;
+    display: flex;
+}
+
+body>header>div{
+    height: 100%;
+    width: 33.3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body>header>div>a{
+    color: white;
+    font-size: 5vh;
+    text-decoration: none;
+}
+
+body>header>div>a{
+    padding-right: 20px;
+    border-right-style: solid;
+    border-color: white;
+    border-width: 3px;
+}
+
+body>header>div>a:nth-last-child(1){
+    border-right-style: none;
+}
+
+body>header>div>a:nth-child(2){
+    padding-left: 20px;
+}
+
+body>header>div>img{
+    height: 100%;
+}
+
+#masthead{
+    height: 140vh;
+    background-image: url("/Interface-Design-Review/4.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#masthead>h1{
+    color: white;
+    font-size: 12vh;
+}
+
+#masthead>div{
+    height: 45px;
+    width: 50px;
+    transform: rotate(49deg);
+    border-style: none;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-width: 3px;
+    border-color: white;
+    padding-top: 10px;
+    transition: border-color 0.25s;
+}
+
+#masthead>div:hover{
+    border-color: black;
+}
+
+main{
+    height: 200vh;
+}
+
+#clip{
+    height: 60%;
+    width: 100%;
+    background-color: darkblue;
+    clip-path: polygon(20% 0%, 100% 0, 100% 20%, 100% 80%, 50% 100%, 50% 100%, 0% 80%, 0 0);
+    position: absolute;
+    z-index: 10;
+}
+
+#clip>h2{
+    position: relative;
+    top:60px;
+    left: 46%;
+    width: 10%;
+    font-size: 7vh;
+}
+
+#clip>h3{
+    position: relative;
+    top: 120px;
+    width:60%;
+    left: 25%;
+    font-size: 2vh;
+}
+
+#images{
+    height: 30%;
+    position: relative;
+    z-index: 9;
+    top:350px;
+    display: flex;
+}
+
+#images>div{
+    height: 100%;
+    width: 50%;
+    background-image: url("/Interface-Design-Review/7.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#images>div:nth-child(2){
+    height: 100%;
+    width: 50%;
+    background-image: url("/Interface-Design-Review/1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+#video{
+    position: relative;
+    top:350px;
+    height: 70vh;
+    background-color: rebeccapurple;
+}
